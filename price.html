@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://abonementyshkola.veridok.ru/price.html">
+<title>Цена — абонементы и посещаемость для школы</title>
+<meta name="description" content="Месячная цена учёта абонементов и посещаемости для языковой школы: отметка с телефона, списание занятий, остатки и напоминания о продлении.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="smoke.js" defer></script>
+<script>
+  /* Открыт экран цен — price_view через smoke.js (window.smokeTrack). */
+  document.addEventListener("DOMContentLoaded", function () { if (window.smokeTrack) window.smokeTrack("price_view"); });
+</script>
+</head>
+<body data-page="price">
+
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">Абонементы школы</a></div>
+  <nav class="top"><a href="index.html#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="index.html#primer" data-ev="click_nav_primer">Пример</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Тариф и цена</h1>
+    <p class="sub">Отметка посещаемости, списание с абонемента, остаток занятий, напоминание о продлении.</p>
+  </div>
+
+  <section id="cena">
+    <div class="grid">
+      <div class="card"><b>До 100 учеников</b><span>1 490 ₽ в месяц.</span><br><a class="btn" href="pay.html?plan=do100" data-ev="payment_click click_pay_do100">Оплатить — 1 490 ₽</a></div>
+      <div class="card"><b>До 300 учеников</b><span>1 990 ₽ в месяц.</span><br><a class="btn" href="pay.html?plan=do300" data-ev="payment_click click_pay_do300">Оплатить — 1 990 ₽</a></div>
+    </div>
+    <p class="note nalog">Цены указаны без НДС.</p>
+    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    <div class="actions"><a class="btn" href="index.html" data-ev="click_back">Вернуться к описанию</a></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
+  <p class="muted">Учёт абонементов и посещаемости по данным школы. За расписание, абонементы и расчёты с учениками отвечает школа.</p>
+</div></footer>
+
+</body>
+</html>
