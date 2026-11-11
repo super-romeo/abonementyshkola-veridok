@@ -8,6 +8,10 @@
 <meta name="description" content="Для языковых школ: преподаватель отмечает, кто пришёл, занятие списывается с абонемента само, остаток виден ученику и администратору.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -62,38 +66,68 @@
 </head>
 <body>
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Абонементы школы</a></div>
-  <nav class="top"><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Абонементы школы</a>
+  <nav><a href="#chto" data-ev="click_nav_chto">Что вы получаете</a><a href="price.html" data-ev="click_nav_cena">Цена</a><a href="#primer" data-ev="click_nav_primer">Пример</a><a href="#start" data-ev="click_nav_start">Начать</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Преподаватель отметил, кто пришёл, — занятие списано с абонемента, и остаток видят все</h1>
-    <p class="sub">Для языковых школ с группами и индивидуальными занятиями: отметка посещаемости с телефона, списание занятия с абонемента без ручного пересчёта, остаток занятий у каждого ученика и напоминание о продлении, когда абонемент заканчивается.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Мне это нужно</a>
-    <p class="cta-note">Ранний доступ · Оплата на этой странице пока не принимается</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Для языковых школ с группами</p>
+      <h1 class="rise" style="--i:1" data-len="long">Преподаватель отметил, кто пришёл,&nbsp;<span class="soft">— занятие списано с абонемента, и остаток видят все</span></h1>
+      <p class="rise" style="--i:2">Для языковых школ с группами и индивидуальными занятиями: отметка посещаемости с телефона, списание занятия с абонемента без ручного пересчёта, остаток занятий у каждого ученика и напоминание о продлении, когда абонемент заканчивается.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Мне это нужно</a>
+      <p class="meta rise" style="--i:4">Ранний доступ · Оплата на этой странице пока не принимается</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="165" font-size="40" font-weight="600" fill="#0a1524">Отметка посещаемости</text><line x1="130" y1="210" x2="1070" y2="210" stroke="#dde2ea" stroke-width="3" fill="none" /><rect x="130" y="260" width="44" height="44" rx="8" fill="#12397a" /><text x="200" y="292" font-size="32" fill="#0a1524">кто пришёл</text><rect x="130" y="350" width="44" height="44" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><rect x="200" y="360" width="340" height="24" rx="12" fill="#dde2ea" /><rect x="130" y="440" width="44" height="44" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><rect x="200" y="450" width="280" height="24" rx="12" fill="#b9c3d2" /><rect x="130" y="530" width="44" height="44" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><rect x="200" y="540" width="310" height="24" rx="12" fill="#dde2ea" /><rect x="680" y="260" width="390" height="400" rx="20" fill="#dfe8f7" /><text x="720" y="330" font-size="32" font-weight="600" fill="#0a1524">Остаток занятий</text><rect x="740" y="500" width="50" height="120" rx="8" fill="#ffffff" /><rect x="820" y="420" width="50" height="200" rx="8" fill="#12397a" /><rect x="900" y="540" width="50" height="80" rx="8" fill="#ffffff" /><rect x="980" y="460" width="50" height="160" rx="8" fill="#b9c3d2" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Для</dt><dd>Языковых школ</dd></div>
+      <div><dt>Отметка</dt><dd>Кто пришёл</dd></div>
+      <div><dt>Как</dt><dd>Списывается с абонемента</dd></div>
+      <div><dt>Доступ</dt><dd>Ранний доступ</dd></div>
+    </dl>
+  </section>
 
   <section id="chto" data-view="features_view">
-    <h2>Что вы получаете</h2>
-    <div class="grid">
-      <div class="card"><b>Отметка посещаемости</b><span>Преподаватель отмечает, кто пришёл, прямо с телефона.</span><br><a class="btn" href="price.html" data-ev="feature_otmetka">Мне это нужно</a></div>
-      <div class="card"><b>Списание с абонемента</b><span>Занятие списывается само, если стоит отметка.</span><br><a class="btn" href="price.html" data-ev="feature_spisanie">Мне это нужно</a></div>
-      <div class="card"><b>Остаток занятий</b><span>Сколько занятий осталось у каждого ученика.</span><br><a class="btn" href="price.html" data-ev="feature_ostatok">Мне это нужно</a></div>
-      <div class="card"><b>Продление</b><span>Напоминание ученику и администратору до конца абонемента.</span><br><a class="btn" href="price.html" data-ev="feature_prodlenie">Мне это нужно</a></div>
+    <div class="stack"><h2>Что вы получаете</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" font-weight="600" fill="#0a1524">кто пришёл</text><rect x="120" y="210" width="44" height="44" rx="8" fill="#12397a" /><polyline points="130,232 142,246 158,214" fill="none" stroke="#ffffff" stroke-width="4" /><rect x="190" y="220" width="430" height="24" rx="12" fill="#dde2ea" /><rect x="120" y="290" width="44" height="44" rx="8" fill="#12397a" /><polyline points="130,312 142,326 158,294" fill="none" stroke="#ffffff" stroke-width="4" /><rect x="190" y="300" width="360" height="24" rx="12" fill="#b9c3d2" /><rect x="120" y="370" width="44" height="44" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><rect x="190" y="380" width="400" height="24" rx="12" fill="#dde2ea" /><rect x="120" y="450" width="44" height="44" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><rect x="190" y="460" width="300" height="24" rx="12" fill="#dde2ea" /></svg></div>
+        <h3>Отметка посещаемости</h3><p>Преподаватель отмечает, кто пришёл, прямо с телефона.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_otmetka">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="150" y="70" width="500" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="190" y="145" font-size="32" font-weight="600" fill="#0a1524">списывается само</text><rect x="190" y="190" width="340" height="22" rx="8" fill="#dde2ea" /><rect x="190" y="236" width="400" height="22" rx="8" fill="#b9c3d2" /><rect x="190" y="282" width="260" height="22" rx="8" fill="#dde2ea" /><rect x="190" y="328" width="370" height="22" rx="8" fill="#dde2ea" /><circle cx="500" cy="440" r="52" fill="#dfe8f7" stroke="#12397a" stroke-width="4" /><polyline points="472,440 492,462 532,404" fill="none" stroke="#12397a" stroke-width="6" /></svg></div>
+        <h3>Списание с абонемента</h3><p>Занятие списывается само, если стоит отметка.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_spisanie">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" font-weight="600" fill="#0a1524">Остаток занятий</text><line x1="140" y1="470" x2="660" y2="470" stroke="#dde2ea" stroke-width="4" fill="none" /><rect x="170" y="340" width="70" height="130" rx="8" fill="#dde2ea" /><rect x="280" y="240" width="70" height="230" rx="8" fill="#12397a" /><rect x="390" y="380" width="70" height="90" rx="8" fill="#b9c3d2" /><rect x="500" y="290" width="70" height="180" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /></svg></div>
+        <h3>Остаток занятий</h3><p>Сколько занятий осталось у каждого ученика.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_ostatok">Мне это нужно</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" font-weight="600" fill="#0a1524">о продлении</text><rect x="140" y="200" width="90" height="70" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><rect x="250" y="200" width="90" height="70" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><rect x="360" y="200" width="90" height="70" rx="8" fill="#12397a" /><rect x="470" y="200" width="90" height="70" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><rect x="140" y="290" width="90" height="70" rx="8" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><rect x="250" y="290" width="90" height="70" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="360" y="290" width="90" height="70" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="470" y="290" width="90" height="70" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="140" y="400" width="420" height="70" rx="16" fill="#dfe8f7" /><rect x="170" y="424" width="280" height="22" rx="8" fill="#ffffff" /></svg></div>
+        <h3>Продление</h3><p>Напоминание ученику и администратору до конца абонемента.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_prodlenie">Мне это нужно</a>
+      </article>
     </div>
   </section>
 
-  <section id="primer" data-view="example_view">
-    <h2>Пример (вымышленные данные)</h2>
-    <p class="fine">В школе английского шесть групп и двадцать индивидуальных учеников. Раньше администратор в конце недели собирала у преподавателей списки, пересчитывала абонементы в таблице и находила ошибки. Теперь преподаватель после урока отмечает пришедших в телефоне, занятия списываются сами, а когда у ученика остаётся два занятия, ему и администратору приходит напоминание о продлении.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+  <section id="primer" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Пример</h2>
+      <p>В школе английского шесть групп и двадцать индивидуальных учеников. Раньше администратор в конце недели собирала у преподавателей списки, пересчитывала абонементы в таблице и находила ошибки. Теперь преподаватель после урока отмечает пришедших в телефоне, занятия списываются сами, а когда у ученика остаётся два занятия, ему и администратору приходит напоминание о продлении.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Выбрать тариф</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" stroke="#dde2ea" stroke-width="6" fill="none" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="960" cy="150" r="22" fill="#12397a" /><text x="240" y="230" font-size="32" font-weight="600" fill="#0a1524" text-anchor="middle">после урока</text><text x="600" y="230" font-size="32" font-weight="600" fill="#0a1524" text-anchor="middle">два занятия</text><text x="960" y="230" font-size="32" font-weight="600" fill="#0a1524" text-anchor="middle">о продлении</text><rect x="140" y="320" width="920" height="380" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="190" y="410" font-size="36" font-weight="600" fill="#0a1524">списываются сами</text><rect x="190" y="470" width="64" height="64" rx="10" fill="#12397a" /><rect x="274" y="470" width="64" height="64" rx="10" fill="#dfe8f7" stroke="#dde2ea" stroke-width="2" /><rect x="358" y="470" width="64" height="64" rx="10" fill="#dde2ea" /><rect x="442" y="470" width="64" height="64" rx="10" fill="#b9c3d2" /><rect x="190" y="580" width="520" height="28" rx="10" fill="#dde2ea" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Как это работает</h2>
-    <p>В небольшой языковой школе ученики обычно платят абонементами: восемь занятий в месяц в группе, десять индивидуальных занятий, абонемент на курс. После каждого занятия нужно отметить, кто пришёл, и списать занятие с абонемента.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Как это работает</h2></div>
+    <div class="stack">
+      <p>В небольшой языковой школе ученики обычно платят абонементами: восемь занятий в месяц в группе, десять индивидуальных занятий, абонемент на курс. После каждого занятия нужно отметить, кто пришёл, и списать занятие с абонемента.</p>
     <p>Часто это делается в тетради, в таблице или в чате с преподавателями. Преподаватель присылает список после урока, администратор переносит его в таблицу и пересчитывает остатки. Ошибки неизбежны: забыли отметить, отметили не в той группе, списали дважды. Родители спрашивают, сколько занятий осталось, а точного ответа нет.</p>
     <p>Сервис делает учёт абонементов и посещаемости одним действием. Преподаватель после занятия открывает список группы в телефоне и отмечает, кто пришёл. Отметка и есть списание: если отметка стоит, занятие списывается с абонемента ученика; если не стоит, не списывается.</p>
     <p>Для каждого ученика видно, какой у него абонемент, сколько занятий в нём было, сколько прошло и сколько осталось. Администратору не нужно ничего пересчитывать: остатки обновляются сразу после отметки.</p>
@@ -108,31 +142,34 @@
     <p>Данные учеников используются только для учёта занятий и напоминаний и не передаются третьим лицам.</p>
     <p>Сервис рассчитан на языковые школы в России с группами и индивидуальными занятиями. Сейчас он в подготовке: сначала мы проверяем, нужен ли он школам.</p>
     <p>За расписание, абонементы и расчёты с учениками отвечает школа; сервис ведёт учёт по её данным.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Вопросы и ответы</h2>
-    <h3>Как списывается занятие?</h3>
-    <p>Преподаватель отмечает, кто пришёл; если отметка стоит, занятие списывается с абонемента.</p>
-    <h3>А если ученик пропустил?</h3>
-    <p>Школа задаёт правило: пропуск по предупреждению без списания, без предупреждения — со списанием.</p>
-    <h3>Видит ли ученик остаток?</h3>
-    <p>Да, ученику или родителю приходит напоминание, когда в абонементе остаётся одно-два занятия.</p>
-    <h3>Нужно ли что-то устанавливать?</h3>
-    <p>Нет. Сервис работает в браузере и на телефоне.</p>
-    <h3>Можно уже пользоваться?</h3>
-    <p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он школам.</p>
+    <div class="stack"><h2>Вопросы и ответы</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Как списывается занятие?</h3><p>Преподаватель отмечает, кто пришёл; если отметка стоит, занятие списывается с абонемента.</p></div>
+      <div class="split flip"><h3>А если ученик пропустил?</h3><p>Школа задаёт правило: пропуск по предупреждению без списания, без предупреждения — со списанием.</p></div>
+      <div class="split flip"><h3>Видит ли ученик остаток?</h3><p>Да, ученику или родителю приходит напоминание, когда в абонементе остаётся одно-два занятия.</p></div>
+      <div class="split flip"><h3>Нужно ли что-то устанавливать?</h3><p>Нет. Сервис работает в браузере и на телефоне.</p></div>
+      <div class="split flip"><h3>Можно уже пользоваться?</h3><p>Пока нет. Сервис в подготовке, и мы проверяем, нужен ли он школам.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Расскажите о школе</h2>
-    <p><label>Сколько у вас учеников<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— выберите —</option><option>До 30</option><option>30–100</option><option>100–300</option><option>Больше 300</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Начать</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Расскажите о школе</h2>
+    </div>
+    <div class="tile stack">
+      <label>Сколько у вас учеников<select data-ev-focus="form_start"><option value="">— выберите —</option><option>До 30</option><option>30–100</option><option>100–300</option><option>Больше 300</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Начать</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Абонементы школы</b></p>
   <p>Оператор: ИП Гудев Роман, ИНН 615007167949 &middot; <a href="privacy.html" data-ev="click_legal_privacy">Политика обработки персональных данных</a></p>
-  <p class="muted">Учёт абонементов и посещаемости по данным школы. За расписание, абонементы и расчёты с учениками отвечает школа.</p>
+  <p>Учёт абонементов и посещаемости по данным школы. За расписание, абонементы и расчёты с учениками отвечает школа.</p>
 </div></footer>
 
 </body>
